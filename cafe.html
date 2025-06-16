@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Premium Coffee House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center min-h-screen flex flex-col" style="background-image: url('bg-coffee.jpg');">
+  <!-- Navbar -->
+  <nav class="w-full bg-black/60 text-white fixed top-0 left-0 z-10">
+    <div class="max-w-4xl mx-auto flex justify-center md:justify-end gap-4 py-2 px-4">
+      <a href="#home" class="px-4 py-2 hover:bg-yellow-800 transition rounded font-semibold text-sm">HOME</a>
+      <a href="#menu" class="px-4 py-2 hover:bg-yellow-800 transition rounded font-semibold text-sm">MENU</a>
+      <a href="#about" class="px-4 py-2 hover:bg-yellow-800 transition rounded font-semibold text-sm">ABOUT</a>
+      <a href="#contact" class="px-4 py-2 hover:bg-yellow-800 transition rounded font-semibold text-sm">CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="flex flex-col items-center pt-28 pb-10 min-h-[90vh]">
+    <img src="logo-coffee.png" alt="Premium Coffee House" class="w-28 md:w-36 mb-4">
+    <h1 class="text-white text-2xl md:text-3xl font-semibold text-center drop-shadow mb-3">A Cozy Place to Enjoy Every Sip</h1>
+    <a href="#menu" class="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-6 py-2 rounded shadow transition mb-8">visit us</a>
+    <!-- Gallery -->
+    <div class="flex flex-col md:flex-row gap-6 mb-10 justify-center">
+      <img src="coffee1.jpg" alt="Latte" class="w-40 h-40 object-cover rounded-lg shadow-lg hover:scale-105 transition duration-300">
+      <img src="coffee2.jpg" alt="Black Coffee" class="w-40 h-40 object-cover rounded-lg shadow-lg hover:scale-105 transition duration-300">
+      <img src="snack1.jpg" alt="Singkong Goreng" class="w-40 h-40 object-cover rounded-lg shadow-lg hover:scale-105 transition duration-300">
+    </div>
+    <!-- News & Updates -->
+    <div class="w-full max-w-md bg-black/70 rounded-lg p-6 flex flex-col items-center">
+      <h2 class="text-white text-lg font-semibold mb-2">Get News and Updates</h2>
+      <form class="flex flex-col sm:flex-row gap-3 w-full">
+        <input type="email" placeholder="Email address" class="flex-1 px-3 py-2 rounded bg-white/80 text-black focus:outline-none focus:ring-2 focus:ring-yellow-600 transition" required>
+        <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 rounded font-semibold transition">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="pt-20 pb-8 max-w-4xl mx-auto w-full px-2">
+    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-8 drop-shadow">Menu List</h2>
+    <!-- Coffee Section -->
+    <div class="mb-8">
+      <h3 class="text-yellow-300 text-lg font-semibold mb-2">Coffee</h3>
+      <div class="bg-white/60 rounded-lg p-4 mb-4 flex flex-col md:flex-row items-center gap-4">
+        <img src="coffee2.jpg" alt="Black Coffee" class="w-28 h-28 object-cover rounded shadow">
+        <div class="flex-1">
+          <div class="flex justify-between items-center mb-1">
+            <span class="text-white font-semibold">1. Black Coffee</span>
+            <span class="text-yellow-700 font-bold">50 k</span>
+          </div>
+          <p class="text-white text-sm">Black coffee is a simple beverage made by brewing ground coffee beans with hot water, without adding milk or sugar. It has a rich, bold flavor and is often enjoyed for its pure coffee taste.</p>
+        </div>
+      </div>
+      <div class="bg-white/60 rounded-lg p-4 mb-4 flex flex-col md:flex-row items-center gap-4">
+        <img src="coffee1.jpg" alt="White Coffee" class="w-28 h-28 object-cover rounded shadow">
+        <div class="flex-1">
+          <div class="flex justify-between items-center mb-1">
+            <span class="text-white font-semibold">2. White Coffee</span>
+            <span class="text-yellow-700 font-bold">60 k</span>
+          </div>
+          <p class="text-white text-sm">White coffee is made from coffee beans roasted at a lower temperature, resulting in a lighter color and a milder, nuttier flavor. Often served with sweetened condensed milk.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Snack Section -->
+    <div>
+      <h3 class="text-yellow-300 text-lg font-semibold mb-2">Snack</h3>
+      <div class="bg-white/60 rounded-lg p-4 flex flex-col md:flex-row items-center gap-4">
+        <img src="snack1.jpg" alt="Singkong Goreng" class="w-28 h-28 object-cover rounded shadow">
+        <div class="flex-1">
+          <div class="flex justify-between items-center mb-1">
+            <span class="text-white font-semibold">1. Singkong Goreng</span>
+            <span class="text-yellow-700 font-bold">75 k</span>
+          </div>
+          <p class="text-white text-sm">Singkong goreng (fried cassava) is a popular Indonesian snack made from cassava pieces deep-fried until golden and crispy, often served with cheese or spicy seasonings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="pt-20 pb-8 max-w-4xl mx-auto w-full px-2">
+    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-6 drop-shadow">About Premium Coffee House</h2>
+    <p class="text-white text-center mb-6 max-w-2xl mx-auto">
+      Premium Coffee House is dedicated to delivering an exceptional coffee experience by creating the best beans and a warm, inviting atmosphere for every customer. Our passion for coffee is reflected in every cup, crafted with care and expertise. Whether you're here for a quick pick-me-up or a relaxing break, we strive to make every visit memorable. Enjoy our renowned specialties and discover why our customers return again and again.
+    </p>
+    <div class="flex flex-col md:flex-row items-center gap-6 mb-6">
+      <img src="interior.jpg" alt="Coffee House Interior" class="w-full md:w-96 rounded-lg shadow-lg">
+    </div>
+    <div class="flex flex-col md:flex-row gap-8 justify-center mb-6">
+      <div>
+        <h3 class="text-yellow-300 text-lg font-semibold mb-2">Our Specialties</h3>
+        <ul class="text-white list-disc list-inside">
+          <li>Black Coffee</li>
+          <li>White Coffee</li>
+          <li>Singkong Goreng</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-yellow-300 text-lg font-semibold mb-2">Visit Us</h3>
+        <p class="text-white text-sm mb-1">123 Coffee Street, Coffee City</p>
+        <p class="text-white text-sm mb-1">Open daily: 7 AM - 9 PM</p>
+        <p class="text-white text-sm mb-1">Contact: (123) 456-7890</p>
+        <p class="text-white text-sm">info@premiumcoffeehouse.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Footer) -->
+  <footer id="contact" class="bg-black/70 text-yellow-100 text-center py-3 text-xs mt-auto">
+    Premium Coffee House | (+62) 123 - 4567 - 8901 | @PremiumCoffeeHouse.com
+  </footer>
+</body>
+</html>
